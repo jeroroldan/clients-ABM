@@ -1,0 +1,34 @@
+
+.container{
+  margin-top: 100px;
+  border: 1px solid;
+}
+
+table {
+  width:100%;
+}
+
+.mat-form-field {
+ 
+  font-size: 14px;
+  width: 50%;
+}
+
+.pointer{
+  cursor: pointer;
+}
+.space__button{
+  margin: 10px;
+}
+
+.main__title{
+  display:flex;
+  align-items: center;
+}
+
+span{
+  font-size: 1.2rem;
+}
+.info__check{
+  margin-top: 20px;
+}

@@ -1,0 +1,31 @@
+<div class="contenedor">
+	<h2 class="title-main">Tarjeta de empleado</h2>
+	<mat-card class="tarjeta" *ngIf="usuarios!=null">
+		<mat-card-header>
+			<div mat-card-avatar><img mat-card-image [src]="usuarios.results[0].picture.thumbnail" class="circular">
+			</div>
+			<mat-card-title>{{usuarios.results[0].name.last}}, {{usuarios.results[0].name.first}}</mat-card-title>
+			<mat-card-subtitle>{{usuarios.results[0].gender=='male'?'varon':'mujer'}}</mat-card-subtitle>
+		</mat-card-header>
+		<img mat-card-image [src]="usuarios.results[0].picture.large">
+		<mat-card-content>
+			<p>Teléfono:{{usuarios.results[0].phone}}</p>
+			<p>{{funcionPadre}}</p>
+		</mat-card-content>
+		<mat-card-actions>
+			<button mat-flat-button (click)="recargar()" color="primary">Otra persona?</button>
+		</mat-card-actions>
+	</mat-card>
+	<table class="table">
+		<tr>
+			<td>Codigo</td>
+			<td>Descripcion</td>
+			<td>Precio</td>
+		</tr>
+		<tr *ngFor="let art of articulos">
+			<td>{{art.codigo }}</td>
+			<td>{{art.descripcion | uppercase}}</td>
+			<td>{{art.precio | currency:'$'}}</td>
+		</tr>
+	</table>
+</div>

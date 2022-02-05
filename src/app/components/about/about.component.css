@@ -1,0 +1,43 @@
+.tarjeta {
+    min-width: 400px;
+    max-width: 600px;
+	border: 2px solid;
+}
+
+.circular {
+    border-radius: 50%;
+	margin-right: 10px;
+}
+
+.contenedor {
+    text-align: center;
+    height: 100vh;
+    flex-direction: row;
+    
+    
+}
+
+.tarjeta{
+    margin-top: 15px;
+    margin: auto;
+    text-align: center;
+}
+
+p{
+	text-align: center;
+	font-size: 1rem;
+}
+
+.title-main{
+    font-size: 3rem;
+}
+
+.table{
+    border-color: blueviolet;
+    border-radius:100px;
+    width: 500px;
+    margin: auto;
+    font-size: 1rem;
+    border: 2px solid;
+}
+
